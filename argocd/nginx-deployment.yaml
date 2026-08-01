@@ -30,7 +30,7 @@ spec:
     app: nginx
   ports:
     - protocol: TCP
-      port: 8086        # Service port
-      targetPort: 8086  # Container port
+      port: 80       # Service port
+      targetPort: 80  # Container port
       nodePort: 30300 # External port on each node (range: 30000–32767)
   type: LoadBalancer    # Also can set ClusterIP or LoadBalancer
